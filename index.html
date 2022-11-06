@@ -9,37 +9,45 @@
     <link rel="stylesheet" href="css/reset.css" />
   </head>
   <body>
-    <!-- greetings -->
-    <form class="hidden" id="login-form">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <input type="submit" value="Log in" />
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <!-- greetings end -->
-    <!-- clock -->
-    <h2 id="clock">00:00:00</h2>
-    <!-- clock end  -->
-    <!-- to do list -->
-    <form id="todo-form" action="">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <!-- to do list end -->
-    <!-- quote & author -->
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
-    <!-- quote & author end -->
-    <!-- weather -->
-    <div id="weather">
-      <span></span>
-      <span></span>
+    <div id="container">
+      <!-- greetings -->
+      <form class="hidden" id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <input class="hidden" type="submit" value="Log in" />
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+      <!-- greetings end -->
+      <!-- clock -->
+      <h2 id="clock">00:00:00</h2>
+      <!-- clock end  -->
+      <!-- to do list -->
+      <section id="todos">
+        <form id="todo-form" action="">
+          <input
+            type="text"
+            placeholder="Write a To Do and Press Enter"
+            required
+          />
+        </form>
+        <ul id="todo-list"></ul>
+      </section>
+      <!-- to do list end -->
+      <!-- quote & author -->
+      <div id="quote">
+        <p></p>
+        <p></p>
+      </div>
+      <!-- quote & author end -->
+      <!-- weather -->
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <!-- weather end -->
     <script src="js/greetings.js"></script>

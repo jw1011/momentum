@@ -87,7 +87,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -106,7 +105,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 1.4;
 }
 ol,
 ul {
@@ -130,6 +129,7 @@ table {
 
 input {
   border: none;
+  background-color: none;
 }
 
 input:focus {
