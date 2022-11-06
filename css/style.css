@@ -5,10 +5,6 @@
   text-align: center;
   color: #ffffff;
 }
-body {
-  scrollbar-color: #6969dd #e0e0e0;
-  scrollbar-width: thin;
-}
 #container {
   width: 100%;
   height: 100%;
@@ -25,7 +21,7 @@ img {
   opacity: 100%;
 }
 #login-form {
-  margin-top: 200px;
+  margin-top: 240px;
 }
 #login-form input,
 #todo-form input {
@@ -40,7 +36,7 @@ img {
 }
 
 #greeting {
-  margin-top: 200px;
+  margin-top: 240px;
   font-size: 40px;
 }
 #clock {
@@ -49,12 +45,34 @@ img {
 }
 
 #todos {
-  width: 350px;
-  height: 300px;
+  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-width: thin;
+  height: 60%;
   position: absolute;
   bottom: 10%;
   right: 5%;
 }
+
+#todos ul {
+  scrollbar-color: #d4aa70 #e4e4e4;
+}
+#todos ul::-webkit-scrollbar {
+  width: 4px;
+}
+#todos ul::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+#todos ul::-webkit-scrollbar-thumb {
+  background-color: #d4aa70;
+  border-radius: 100px;
+}
+#todos ul::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: 100px;
+}
+
 #todo-form {
   position: absolute;
   bottom: 0%;
@@ -65,17 +83,19 @@ img {
   position: absolute;
   bottom: 20%;
   right: 5%;
-  height: 150px;
+  max-height: 100%;
   overflow: auto;
-}
-
-#todo-list ul {
-  background: #000000;
-  padding: 40px;
-  border-radius: 60px;
+  min-width: 260px;
 }
 #todo-list li {
   text-align: right;
+  margin-right: 5px;
+}
+
+#todo-list button {
+  margin-left: 10px;
+  background: none;
+  color: rgb(49, 214, 255);
 }
 
 #quote {
